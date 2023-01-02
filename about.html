@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Uplifted</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navbar Goes Here -->
+   <nav class="relative container mx-auto p-6">
+    <!-- flex container -->
+        <div class="flex items-center justify-between">
+            <!-- menu items -->
+            <div class="hidden md:flex space-x-6">
+                <a href="">Work</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Pricing</a>
+            </div>
+            <!-- logo -->
+            <div class="pt-2">
+                <a href="/index.html"><img class="w-12" src="/white.svg" alt="Kevinkweli Logo"></a>
+            </div>
+            <!-- Secondary menu-->
+            <div class="hidden md:block">
+                <a href="#" class="text-gray-800 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-600 hover:border-purple-600">Get in touch</a>
+            </div>
+
+
+            <!-- hambuger icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- mobile side menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="">Work</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Pricing</a>
+            </div>
+        </div>
+   </nav>
+    <!-- Contents goes here -->
+    <div class="py-32 text-center">
+        <h2 class="font-extrabold text-6xl">Navbar in Work</h2>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
